@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title >Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calc1.css"> <!-- Linking to CSS for styling -->
+  <link rel="icon" type="image/png" href="C:\Users\aDMIN\Downloads\calculator.png"
+</head>
+<body  background=" C:\Users\aDMIN\Downloads\top-view-notebooks-calculator.jpg">
+      <div class="calculator">
+    <input type="text" id="display" class="display" disabled /> <!-- Display area -->
+
+    <div class="buttons">
+      <!-- Number buttons -->
+      <button onclick="appendNumber(1)">1</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(2)">2</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(3)">3</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(4)">4</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(5)">5</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(6)">6</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(7)">7</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(8)">8</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(9)">9</button><!--adding action numbers (appendNumber)-->
+      <button onclick="appendNumber(0)">0</button><!--adding action numbers (appendNumber)-->
+
+      <!-- Operation buttons -->
+      <button onclick="appendOperator('+')">+</button><!--This stores the operator and saves the first number entered by the user, clears the input for the next number, and updates the display-->
+      <button onclick="appendOperator('-')">-</button><!--This stores the operator and saves the first number entered by the user, clears the input for the next number, and updates the display-->
+      <button onclick="appendOperator('*')">*</button><!--This stores the operator and saves the first number entered by the user, clears the input for the next number, and updates the display-->
+      <button onclick="appendOperator('/')">/</button><!--This stores the operator and saves the first number entered by the user, clears the input for the next number, and updates the display-->
+
+      <!--  buttons -->
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="calculateResult()">=</button>
+    </div>
+  </div>
+
+  <script src="calc2.js"></script> <!-- Linking to JS for functionality -->
+</body>
+</html>
